@@ -51,4 +51,8 @@ class TestTddCalc < Minitest::Test
     def test_check_if_numbers_or_float
         assert_equal(true, calc_check_if_numbers?(1, 1.5))
     end
+
+    def test_passing_other_types
+        assert_equal(false, calc_add(3, "3"))
+    end
 end
