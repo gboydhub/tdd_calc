@@ -29,4 +29,8 @@ class TestTddCalc < Minitest::Test
     def test_5_times_5_returns_25
         assert_equal(25, calc_multiply(5, 5))
     end
+
+    def test_5_div_1_returns_5
+        assert_equal(5, calc_divide(5, 1))
+    end
 end
