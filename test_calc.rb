@@ -42,10 +42,7 @@ class TestTddCalc < Minitest::Test
         assert_equal(false, calc_divide(5, 0))
     end
 
-    def test_variable_type_passing
-        assert_equal(false, calc_add(22, "3"))
-        assert_equal(false, calc_subtract(false, true))
-        assert_equal(false, calc_multiply("3", "3"))
-        assert_equal(false, calc_divide("32", 0))
+    def test_check_if_numbers
+        assert_equal(false, calc_check_if_numbers(22, "3"))
     end
 end
