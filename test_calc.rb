@@ -45,5 +45,6 @@ class TestTddCalc < Minitest::Test
     def test_check_if_numbers
         assert_equal(false, calc_check_if_numbers?(22, "3"))
         assert_equal(true, calc_check_if_numbers?(1, 1))
+        assert_equal(true, calc_check_if_numbers?(1.5, 2.2))
     end
 end
