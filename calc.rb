@@ -11,6 +11,6 @@ def calc_multiply(a, b)
 end
 
 def calc_divide(a, b)
-    if b==0; return 0; end
+    if b==0; return false; end
     a/b
 end

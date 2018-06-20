@@ -39,7 +39,13 @@ class TestTddCalc < Minitest::Test
     end
 
     def test_divide_by_zero_error
-        assert_equal(0, calc_divide(5, 0))
+        assert_equal(false, calc_divide(5, 0))
     end
 
+    def test_variable_type_passing
+        assert_equal(false, calc_add(22, "3"))
+        assert_equal(false, calc_subtract(false, true))
+        assert_equal(false, calc_multiply("3", "3"))
+        assert_equal(false, calc_divide("32", 0))
+    end
 end
