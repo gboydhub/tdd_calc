@@ -17,4 +17,8 @@ class TestTddCalc < Minitest::Test
     def test_1_minus_1_returns_0
         assert_equal(0, calc_subtract(1, 1))
     end
+    
+    def test_5_minus_3_returns_2
+        assert_equal(2, calc_subtract(5, 3))
+    end
 end
