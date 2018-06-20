@@ -38,4 +38,8 @@ class TestTddCalc < Minitest::Test
         assert_equal(2, calc_divide(10, 5))
     end
 
+    def test_divide_by_zero_error
+        assert_equal(0, calc_divide(5, 0))
+    end
+
 end
