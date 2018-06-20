@@ -3,5 +3,5 @@ def calc_add(a, b)
 end
 
 def calc_subtract(a, b)
-    0
+    a-b
 end
