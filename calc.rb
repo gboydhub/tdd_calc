@@ -1,6 +1,8 @@
 def calc_check_if_numbers?(a, b)
     if a.is_a?(Integer) && b.is_a?(Integer)
         return true
+    elsif a.is_a?(Float) && b.is_a?(Float)
+        return true
     end
     false
 end
