@@ -11,5 +11,5 @@ def calc_multiply(a, b)
 end
 
 def calc_divide(a, b)
-    5
+    a/b
 end
