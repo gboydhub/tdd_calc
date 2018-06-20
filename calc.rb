@@ -1,7 +1,12 @@
 def calc_check_if_numbers?(a, b)
-    if a.is_a?(Integer) && b.is_a?(Integer)
-        return true
-    elsif a.is_a?(Float) && b.is_a?(Float)
+    passcheck=0
+    if a.is_a?(Integer) || a.is_a?(Float)
+        passcheck += 1
+    end
+    if b.is_a?(Integer) || b.is_a?(Float)
+        passcheck += 1
+    end
+    if passcheck == 2 then
         return true
     end
     false
