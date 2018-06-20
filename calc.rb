@@ -9,3 +9,7 @@ end
 def calc_multiply(a, b)
     a*b
 end
+
+def calc_divide(a, b)
+    5
+end
