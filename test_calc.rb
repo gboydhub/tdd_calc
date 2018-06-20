@@ -33,4 +33,9 @@ class TestTddCalc < Minitest::Test
     def test_5_div_1_returns_5
         assert_equal(5, calc_divide(5, 1))
     end
+
+    def test_10_div_5_returns_2
+        assert_equal(2, calc_divide(10, 5))
+    end
+
 end
