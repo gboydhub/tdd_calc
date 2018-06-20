@@ -1,3 +1,7 @@
+def calc_check_if_numbers?(a, b)
+    false
+end
+
 def calc_add(a, b)
     a+b
 end
