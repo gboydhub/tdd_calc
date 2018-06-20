@@ -55,4 +55,8 @@ class TestTddCalc < Minitest::Test
     def test_passing_other_types
         assert_equal(false, calc_add(3, "3"))
     end
+
+    def test_adding_float_to_int
+        assert_equal(1.5, calc_add(1, 0.5))
+    end
 end
