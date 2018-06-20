@@ -13,4 +13,8 @@ class TestTddCalc < Minitest::Test
     def test_3_plus_3_returns_six
         assert_equal(6, calc_add(3, 3))
     end
+    
+    def test_1_minus_1_returns_0
+        assert_equal(0, calc_subtract(1, 1))
+    end
 end
